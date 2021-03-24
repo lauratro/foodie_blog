@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="foodieorange.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Confirmed</title>
+  </head>
+  <body>
+    <header>
+      <div class="head-menu">
+        <img class="logo" src="foodieorange.png" alt="Foodie Blog" />
+        <h1 class="title">Foodie Blog</h1>
+        <nav>
+          <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="registration-form.html">Newsletter</a></li>
+
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li class="icon-menu">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </li>
+            <li class="icon-menu">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </li>
+          </ul>
+          <div class="mb">
+            <img class="mobile_menu_btn" src="button_orange.png" alt="Menu" />
+            <div class="mobile-menu tx-up">
+              <ul class="menu-list-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html"> Reviews </a></li>
+                <li><a href="registration-form.html">Newsletter</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li>
+                  <div class="disp-flex icon-mb-menu">
+                    <i
+                      class="fa fa-facebook-official icon-menu"
+                      aria-hidden="true"
+                      ><a href="#"></a
+                    ></i>
+                    <i class="fa fa-instagram icon-menu" aria-hidden="true"
+                      ><a href="#"></a
+                    ></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="confirm-main">
+      <div class="thanks-stars">
+        <p class="text-center thanks">
+          Thank you <span id="data" class="tx-up"></span> for submitting our
+          form! Now you are part of our Foodie community!
+        </p>
+        <img
+          class="giphy"
+          src="https://media.giphy.com/media/3fihr4gMQ1R2mX8331/giphy.gif"
+          width="480"
+          height="480"
+          alt="gif"
+        />
+
+        <div class="star one"></div>
+        <div class="star two"></div>
+        <div class="star three"></div>
+        <div class="star four"></div>
+      </div>
+      <script>
+        document.getElementById("data").innerHTML = localStorage.getItem(
+          "name1"
+        );
+      </script>
+    </main>
+    <footer>
+      <div class="icon-cont-foot disp-flex just-cont-cent">
+        <i
+          class="fa fa-facebook-official icon-footer icon-menu"
+          aria-hidden="true"
+        ></i>
+        <i class="fa fa-instagram icon-footer icon-menu" aria-hidden="true"></i>
+      </div>
+      <p>All rights reserved - Foodie blog</p>
+    </footer>
+  </body>
+</html>

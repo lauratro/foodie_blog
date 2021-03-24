@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="foodieorange.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Newsletter</title>
+  </head>
+  <body>
+    <header>
+      <div class="head-menu">
+        <img class="logo" src="foodieorange.png" alt="Foodie Blog" />
+        <h1 class="title">Foodie Blog</h1>
+        <nav>
+          <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li class="underline-text"><a>Newsletter</a></li>
+
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li class="icon-menu">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </li>
+            <li class="icon-menu">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </li>
+          </ul>
+          <div class="mb">
+            <img class="mobile_menu_btn" src="button_orange.png" alt="Menu" />
+            <div class="mobile-menu tx-up">
+              <ul class="menu-list-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html"> Reviews </a></li>
+                <li class="underline-text"><a>Newsletter</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li>
+                  <div class="disp-flex icon-mb-menu">
+                    <i
+                      class="fa fa-facebook-official icon-menu"
+                      aria-hidden="true"
+                      ><a href="#"></a
+                    ></i>
+                    <i class="fa fa-instagram icon-menu" aria-hidden="true"
+                      ><a href="#"></a
+                    ></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="newslet-cont disp-flex">
+        <div class="newslet-descr">
+          <p class="text-center newslet-text">
+            Sign up for our newsletters and tell us some information about
+            yourself to help us personalize the content we share with you.
+          </p>
+          <br />
+          We will inform you about:
+          <ul class="newslet-list">
+            <li>Reviews of new Restaurants around you</li>
+            <li>Openinings and Special Events</li>
+            <li>New Trends</li>
+          </ul>
+        </div>
+        <form
+          class="registr"
+          action="/confirmation-page.html"
+          method="GET"
+          onsubmit="return results();"
+        >
+          <div class="input-ele disp-flex space-btw input-nm-sn">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="name">Surname</label>
+            <input type="text" id="surname" name="name" />
+          </div>
+
+          <div class="input-ele">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <div class="input-ele gender disp-flex">
+            <p>Gender:</p>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+          </div>
+          <div class="input-ele checkbox-food">
+            <p>Select your favourite types of Restaurant:</p>
+            <input type="checkbox" id="italian" name="food" value="italian" />
+            <label for="italian">italian</label>
+            <input type="checkbox" id="chinese" name="food" value="chinese" />
+            <label for="chinese">chinese</label>
+            <input type="checkbox" id="japanese" name="food" value="japanese" />
+            <label for="japanese">japanase</label>
+            <input type="checkbox" id="greek" name="food" value="greek" />
+            <label for="greek">greek</label>
+            <input type="checkbox" id="mexican" name="food" value="mexican" />
+            <label for="mexican">mexican</label>
+            <input type="checkbox" id="peruvian" name="food" value="peruvian" />
+            <label for="peruvian">peruvian</label>
+          </div>
+          <div class="input-ele">
+            <label for="area">Where are you living in Berlin?</label>
+
+            <select id="area" name="area">
+              <option class="plac" value="">Please choose an option</option>
+              <option value="Mitte">Mitte</option>
+              <option value="Neukölln">Neukölln</option>
+              <option value="Kreuzberg">Kreuzberg</option>
+              <option value="Friedrichshain">Friedrichshain</option>
+              <option value="Prenzlauer Berg">Prenzlauer Berg</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Charlottenburg – Wilmersdorf">
+                Charlottenberg – Wilmersdorf
+              </option>
+              <option value="Schöneberg">Schöneberg</option>
+            </select>
+          </div>
+
+          <div class="term_condition input-ele">
+            <p class="text-center underline-text">
+              Newsletter Terms and Conditions
+            </p>
+            <p class="text-justify">
+              By subscribing to our newsletter you agree to receive email from
+              us. The aim of our newletter service is to keep our customers and
+              visitors updated about new book releases or new information about
+              our books and/or company. The subscription to our newsletter
+              service is not mandatory.
+            </p>
+            <br />
+            <ol class="term-list">
+              <li class="count">
+                Frequency The frequency of the newletter issues will be at most
+                2 per month.
+                <ol class="term-list">
+                  <li class="count">
+                    Review of Bars, Kneipe, Cocktail bar ones a week
+                  </li>
+                  <li class="count">Subscriber's review ones a month</li>
+                </ol>
+              </li>
+
+              <li class="count">
+                Limited Liability<br />
+                We reserve the sole right to either modify or discontinue the
+                newletter, at any time with or without notice to you. We will
+                not be liable to you or any third party should we exercise such
+                right. Any new features that augment or enhance the then-current
+                services on this site shall also be subject to these Terms of
+                Use. We reserve the sole right to unsubscribe users / visitors
+                from or newsletter service, without notice . We will do so with
+                any subscriber we deem registered with fake data.
+              </li>
+              <li class="count">
+                Double opt-in<br />
+                We require all subscribers to confirm their email address upon
+                registration. You will therefor receive a message with a link
+                you'll have to click in order to confirm the email address and
+                your will to subscribe.
+              </li>
+              <li class="count">
+                Privacy policy<br />
+                We will not communicate / spread / publish or otherwise give
+                away your address. You'll be able:
+                <ul class="unlist">
+                  <li class="spot">To change your subscription settings</li>
+                  <li class="spot">Delete it alltogether anytime</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="input-ele">
+            <input
+              type="radio"
+              id="terms"
+              name="terms"
+              value="I agree"
+              required
+            />
+            <label for="terms">I agree to terms and conditions</label>
+          </div>
+          <div class="input-ele">
+            <input class="btn-centr" type="submit" value="Submit" />
+          </div>
+        </form>
+        <script>
+          function results() {
+            let name = document.getElementById("name").value;
+            localStorage.setItem("name1", name);
+          }
+        </script>
+      </div>
+    </main>
+    <footer>
+      <div class="icon-cont-foot disp-flex just-cont-cent">
+        <i
+          class="fa fa-facebook-official icon-footer icon-menu"
+          aria-hidden="true"
+        ></i>
+        <i class="fa fa-instagram icon-footer icon-menu" aria-hidden="true"></i>
+      </div>
+      <p>All rights reserved - Foodie blog</p>
+    </footer>
+  </body>
+</html>
