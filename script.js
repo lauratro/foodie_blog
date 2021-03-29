@@ -1,23 +1,27 @@
 let text = "Berlin Restaurant Reviews";
-    
+
 let output = "";
 
 let i = 0;
 
-
-
 function writeText() {
-    
-    output += text.charAt(i);
-  
-    i++;
-    
-    document.getElementById("title").innerHTML = output;
-    
-    if(i >= text.length) {
-        
-        clearInterval(s);
-    }
+  output += text.charAt(i);
+
+  i++;
+
+  document.getElementById("title").innerHTML = output;
+
+  if (i >= text.length) {
+    clearInterval(s);
+  }
 }
 
-s = setInterval("writeText()",100);
+s = setInterval("writeText()", 100);
+
+//Registration Form
+function results() {
+  let name = document.getElementById("name").value;
+  localStorage.setItem("name1", name);
+}
+
+document.getElementById("data").innerHTML = localStorage.getItem("name1");
