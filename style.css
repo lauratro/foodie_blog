@@ -149,6 +149,9 @@ h1 {
   -webkit-box-shadow: 17px 21px 34px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 17px 21px 34px 1px rgba(0, 0, 0, 0.75);
 }
+.block-hp p {
+  font-size: 1.1rem;
+}
 .first {
   left: 70px;
   top: 300px;
@@ -502,7 +505,7 @@ aside {
 
 .aside-rev {
   position: relative;
-  left: 260px;
+  left: 275px;
   transition: 700ms ease-in;
   width: 300px;
   background-color: rgba(249, 105, 14, 1);
