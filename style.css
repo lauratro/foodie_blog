@@ -22,10 +22,35 @@ Home page first block
 * {
   box-sizing: border-box;
 }
-body {
+body,
+html {
   margin: 0;
   padding: 0px;
   font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.2rem;
 }
 main {
   position: relative;
@@ -112,14 +137,16 @@ header {
   position: absolute;
   right: 0;
   text-align: right;
-  top: 10px;
+  top: 20px;
 }
 h1 {
   width: 150px;
   position: absolute;
   left: 40px;
+  top: 20px;
   text-align: center;
   font-style: italic;
+  font-size: xx-large;
 }
 .menu-list a {
   margin: 25px 15px 15px 15px;
@@ -177,6 +204,10 @@ h1 {
 .restaurant h3 {
   text-align: center;
 }
+.left-menu {
+  text-align: end;
+}
+
 /* Grid first Page */
 .blog-container {
   display: grid;
@@ -205,7 +236,7 @@ h1 {
 }
 
 .cat {
-  margin: 25px 10px;
+  margin: 25px 10px 25px 40px;
   font-weight: bold;
   padding: 5px;
   border-bottom: 1px black solid;
@@ -281,15 +312,15 @@ aside {
     padding: 15px;
   }
   .first {
-    left: 250px;
+    left: 200px;
     top: 350px;
   }
   .second {
-    left: 250px;
+    left: 200px;
     top: 220px;
   }
   .third {
-    left: 250px;
+    left: 200px;
     top: 100px;
   }
 }
