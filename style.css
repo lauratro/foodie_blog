@@ -526,7 +526,7 @@ aside {
 }
 .aside-label p {
   text-align: center;
-  padding: 30px 10px 10px 40px;
+  padding: 20px 10px 20px 40px;
   font-weight: bold;
 }
 
@@ -593,8 +593,11 @@ aside {
 .rev-tab td {
   padding: 10px;
   border: 1px groove grey;
+  vertical-align: middle;
 }
-
+.rest-label {
+  padding: 20px 10px 10px 10px;
+}
 .rest-name {
   font-weight: bold;
 }
@@ -632,11 +635,13 @@ aside {
 @media only screen and (max-width: 899px) and (min-width: 815px) {
   .white-block {
     top: 83%;
+    left: 15%;
   }
 }
 @media only screen and (max-width: 810px) and (min-width: 760px) {
   .white-block {
     top: 84%;
+    left: 15%;
   }
 }
 
