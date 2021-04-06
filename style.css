@@ -417,74 +417,12 @@ aside {
     margin: 0 auto;
   }
 }
-/*Mobile menu 
-.mobile_menu_btn {
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 70px;
-  width: 60px;
-}
 
+/*Mobile menu */
 .mobile-menu {
   display: none;
-  position: absolute;
-  top: 0;
-  right: 70px;
-  width: 100%;
-
-  transform: translateY(-2em);
-  z-index: -1;
-  transition: all 0.3s ease-in-out 0s, display 0s linear 0.3s,
-    z-index 0s linear 0.01s;
-}
-.mb:hover .mobile-menu {
-  display: block;
-  z-index: 1;
-  transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s;
 }
 
-.menu-list-mobile {
-  position: absolute;
-  right: 0;
-  background-color: coral;
-  display: none;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-}
-.mobile-menu:hover {
-  display: block;
-}
-.mobile-menu a,
-.icon-mb-menu {
-  margin-top: 15px;
-  color: white;
-}
-.fa-facebook-official:hover,
-.fa-instagram:hover {
-  color: rgb(255, 165, 0);
-  cursor: pointer;
-}*/
-
-/* Media Query Mobile menu
-@media only screen and (max-width: 700px) {
-  .mobile_menu_btn {
-    display: block;
-  }
-  .menu-list {
-    display: none;
-  }
-}
-@media only screen and (max-width: 310px) {
-  .mobile-menu {
-    right: 20px;
-  }
-  .mobile_menu_btn {
-    right: 20px;
-  }
-}*/
 /*Reviews Page */
 .arrow-left-img {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
@@ -996,7 +934,7 @@ footer {
     right: 40px;
     background-color: coral;
     padding: 5px;
-    width: 60px;
+    width: fit-content;
     z-index: 3;
   }
   .line {
@@ -1040,5 +978,36 @@ footer {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
+  }
+  .menu-list-mobile li {
+    opacity: 0;
+  }
+  .menu-list-mobile i {
+    opacity: 0;
+  }
+  .menu-list-mobile li:nth-child(1) {
+    transition: opacity 0.5s ease 0.2s;
+  }
+  .menu-list-mobile li:nth-child(2) {
+    transition: opacity 0.5s ease 0.4s;
+  }
+  .menu-list-mobile li:nth-child(3) {
+    transition: opacity 0.5s ease 0.6s;
+  }
+  .menu-list-mobile li:nth-child(4) {
+    transition: opacity 0.5s ease 0.8s;
+  }
+  .menu-list-mobile li.end {
+    opacity: 1;
+  }
+  .menu-list-mobile i:nth-child(1) {
+    transition: opacity 0.5s ease 1s;
+  }
+  .menu-list-mobile i:nth-child(2) {
+    transition: opacity 0.5s ease 1s;
+  }
+
+  .menu-list-mobile i.iconEnd {
+    opacity: 1;
   }
 }
