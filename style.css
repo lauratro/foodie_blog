@@ -153,7 +153,8 @@ h1 {
   color: whitesmoke;
   text-transform: uppercase;
 }
-.menu-list a:hover {
+.menu-list a:hover,
+i:hover {
   color: rgb(255, 165, 0);
 }
 .icon-menu {
